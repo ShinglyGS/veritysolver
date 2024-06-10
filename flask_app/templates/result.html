@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Result</h1>
+    <h2>Primary Letters:</h2>
+    <p>Left: {{ primary['left'] }}</p>
+    <p>Middle: {{ primary['middle'] }}</p>
+    <p>Right: {{ primary['right'] }}</p>
+    <h2>Secondary Letters:</h2>
+    <p>Left: {{ secondary['left'][0] }}, {{ secondary['left'][1] }}</p>
+    <p>Middle: {{ secondary['middle'][0] }}, {{ secondary['middle'][1] }}</p>
+    <p>Right: {{ secondary['right'][0] }}, {{ secondary['right'][1] }}</p>
+
+    <h2>Dissect Instructions:</h2>
+    <ul>
+        {% for instruction in instructions %}
+            <li>{{ instruction }}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="/" method="get">
+        <button type="submit">Restart</button>
+    </form>
+    <br>
+    <a href="/">Back to Input Page</a> <!-- Link to the index page -->
+</body>
+</html>

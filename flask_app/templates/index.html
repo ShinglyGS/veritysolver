@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Letters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Enter Positions</h1>
+    <p>For each position, enter the 2D shape letter (T = Triangle, S = Square, C = Circle) and the 3D shape letters (TT, SS, CC, TS, TC, SC)</p>
+    <form action="/" method="post">
+        <label for="left_2d">Left 2D Letter:</label>
+        <input type="text" id="left_2d" name="left_2d" required>
+        <label for="left_3d">Left 3D Letters:</label>
+        <input type="text" id="left_3d" name="left_3d" required>
+        <br>
+        <label for="middle_2d">Middle 2D Letter:</label>
+        <input type="text" id="middle_2d" name="middle_2d" required>
+        <label for="middle_3d">Middle 3D Letters:</label>
+        <input type="text" id="middle_3d" name="middle_3d" required>
+        <br>
+        <label for="right_2d">Right 2D Letter:</label>
+        <input type="text" id="right_2d" name="right_2d" required>
+        <label for="right_3d">Right 3D Letters:</label>
+        <input type="text" id="right_3d" name="right_3d" required>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <p>TT = "d4"</p>
+        <p>SS = Cube</p>
+        <p>CC = Sphere</p>
+        <p>TS/ST = Pyramid/Wedge</p>
+        <p>TC/CT = Cone</p>
+        <p>SC/CS = Cylinder</p>
+    </form>
+</body>
+</html>
