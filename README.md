@@ -5,3 +5,5 @@ It's pretty crude, so it might break if not used right. Instructions have been s
 Please feel free to make use of this tool, but if you do please credit me and my work!
 
 Disclaimer: ChatGPT was used to help me convert the original app logic into a flask app. 
+
+created by me (https://x.com/ShinglyGS)
